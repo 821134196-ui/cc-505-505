@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>公共座椅管护 · 地图与工单</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🪑</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 11V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/><path d="M3 11h18v4H3z"/><path d="M6 15v6M18 15v6"/>
+    </svg>
+    公共座椅管护
+  </div>
+  <div class="spacer"></div>
+  <div class="role-box">
+    <input id="userName" type="text" placeholder="姓名">
+    <select id="roleSelect">
+      <option value="citizen">市民</option>
+      <option value="crew">养护班组</option>
+      <option value="inspector">巡查员</option>
+      <option value="dispatcher">调度员</option>
+    </select>
+    <button class="btn sm orange" id="loginBtn">切换</button>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button data-tab="map" class="active">🗺️ 地图</button>
+  <button data-tab="seats">📋 座椅台账</button>
+  <button data-tab="orders">🔧 维修工单<span class="badge" id="woBadge"></span></button>
+  <button data-tab="incidents">🚨 报损事件<span class="badge" id="incBadge"></span></button>
+</nav>
+
+<main id="app"></main>
+
+<div id="modalRoot"></div>
+<div id="toastRoot"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
