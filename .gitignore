@@ -2,6 +2,7 @@
 .env.*
 !.env.example
 node_modules/
+data/
 .venv/
 __pycache__/
 target/

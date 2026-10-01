@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>座椅养护 · 公园与街道公共座椅管理</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231f5130'/><text x='50' y='72' font-size='60' text-anchor='middle'>🪑</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">🪑</span>座椅养护台账</div>
+  <nav class="tabs">
+    <a href="#/map" data-tab="map">地图</a>
+    <a href="#/list" data-tab="list">座椅列表</a>
+    <a href="#/orders" data-tab="orders">维修工单</a>
+  </nav>
+  <div class="spacer"></div>
+  <div class="role-box">
+    当前身份
+    <select id="role">
+      <option value="citizen">市民</option>
+      <option value="crew1">维保一班</option>
+      <option value="crew2">维保二班</option>
+      <option value="inspector">复验员老周</option>
+    </select>
+  </div>
+</header>
+
+<main id="app"></main>
+<div id="tooltip"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
